@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class PacksListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -17,7 +18,8 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: nil)
+        navigationItem.title = "Stickers Mortelle Adèle"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(createActionsSheet))
         packsTable.delegate = self
         packsTable.dataSource = self
         computeBannerImage()
@@ -26,6 +28,21 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    @objc func createActionsSheet() -> Void {
+        let actionSheet: UIAlertController = UIAlertController(title: "", message: "Choisir une action", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "CGU", style: .default, handler: { action in
+            let svc = SFSafariViewController(url: NSURL(string: "http://applications-enfants.bayam.fr/page/cgu-stickers-mortelle-adele-application.html")! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "L' univers Mortelle Adèle", style: .default, handler: { action in
+            if let url = URL(string: "https://www.mortelleadele.com") {
+                UIApplication.shared.open(url)
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
     }
     
     func computePackTable() -> Void {
