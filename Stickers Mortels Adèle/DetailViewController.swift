@@ -54,7 +54,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func showShareSheet(withSticker sticker: String) {
-        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [UIImage(named: sticker)], applicationActivities: nil)
+        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [UIImage(named: sticker)!], applicationActivities: nil)
         shareViewController.popoverPresentationController?.sourceView = self.view
         shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
         shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
