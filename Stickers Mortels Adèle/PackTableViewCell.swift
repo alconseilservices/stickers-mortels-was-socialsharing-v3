@@ -18,6 +18,7 @@ class PackTableViewCell: UITableViewCell {
         super.awakeFromNib()
         packNameLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         packSizeLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
+        packSizeLabel.textColor = .gray
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
