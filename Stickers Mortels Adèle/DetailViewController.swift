@@ -30,9 +30,40 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
         return CGSize(width: collectionViewSize, height: collectionViewSize)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sticker = (packItem?.stickersNames[indexPath.item])!
+        let cell = collectionView.cellForItem(at: indexPath)
+        showShareActionSheet(withSticker: sticker, overCell: cell!)
+    }
+    
+    func showShareActionSheet(withSticker sticker: String, overCell cell: UICollectionViewCell) {
+        let actionSheet: UIAlertController = UIAlertController(title: "\n\n\n\n\n\n", message: "", preferredStyle: .actionSheet)
+        
+        actionSheet.popoverPresentationController?.sourceView = cell.contentView
+        actionSheet.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x: cell.contentView.bounds.midX, y: cell.contentView.bounds.midY, width: 0, height: 0)
+
+        actionSheet.addAction(UIAlertAction(title: "Partager...", style: .default, handler: { action in
+            self.showShareSheet(withSticker: sticker)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+        actionSheet.addImageView(withImage: UIImage(named: sticker)!)
+        present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func showShareSheet(withSticker sticker: String) {
+        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [UIImage(named: sticker)], applicationActivities: nil)
+        shareViewController.popoverPresentationController?.sourceView = self.view
+        shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        present(shareViewController, animated: true, completion: nil)
+    }
 
     func configureView() {
         self.title = packItem?.name
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(createActionsSheet))
     }
 
     override func viewDidLoad() {
@@ -48,6 +79,18 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
             configureView()
         }
     }
+    
+    @objc func createActionsSheet() -> Void {
+        let actionSheet: UIAlertController = UIAlertController(title: "", message: "Choisir une action", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Ajouter le pack à WhatsApp", style: .default, handler: { action in
+            if(canSendToWhatsapp()) {
+                sendToWhatsapp(fileName: self.packItem!.dataFileName)
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
 
 
 }

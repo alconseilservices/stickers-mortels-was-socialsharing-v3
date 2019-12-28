@@ -70,9 +70,6 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
             if let indexPath = packsTable.indexPathForSelectedRow {
                 let controller = segue.destination as! DetailViewController
                 controller.packItem = packs[indexPath.row]
-                //controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                //controller.navigationItem.leftItemsSupplementBackButton = true
-                //detailViewController = controller
             }
         }
     }
@@ -93,11 +90,6 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*let selectedPack = packs[indexPath.row]
-        let alertController = UIAlertController(title: "Hint", message: "You have selected pack : \(selectedPack.name).", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        alertController.addAction(alertAction)
-        present(alertController, animated: true, completion: nil)*/
     }
 
 

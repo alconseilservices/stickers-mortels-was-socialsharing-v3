@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67344F1C23B7E0B500F394EB /* StickerImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67344F1B23B7E0B500F394EB /* StickerImageViewCell.swift */; };
+		67344F1E23B809B700F394EB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67344F1D23B809B700F394EB /* Utils.swift */; };
 		6742176523B6BC99000152EC /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742176423B6BC99000152EC /* Pack.swift */; };
 		6742176723B6BE2D000152EC /* packs.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176623B6BE2C000152EC /* packs.json */; };
 		6742176923B6BE52000152EC /* objets.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176823B6BE52000152EC /* objets.json */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		67344F1B23B7E0B500F394EB /* StickerImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerImageViewCell.swift; sourceTree = "<group>"; };
+		67344F1D23B809B700F394EB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		6742176423B6BC99000152EC /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
 		6742176623B6BE2C000152EC /* packs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = packs.json; sourceTree = "<group>"; };
 		6742176823B6BE52000152EC /* objets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = objets.json; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				6742177223B734FD000152EC /* PackTableViewCell.swift */,
 				675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */,
 				67344F1B23B7E0B500F394EB /* StickerImageViewCell.swift */,
+				67344F1D23B809B700F394EB /* Utils.swift */,
 				675A5D3923AA9F4A00CA71CC /* Main.storyboard */,
 				675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */,
 				675A5D3E23AA9F4B00CA71CC /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 				675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */,
 				6742177323B734FD000152EC /* PackTableViewCell.swift in Sources */,
 				6742176523B6BC99000152EC /* Pack.swift in Sources */,
+				67344F1E23B809B700F394EB /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
