@@ -66,17 +66,18 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*if segue.identifier == "showDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
-                detailViewController = controller
+        if segue.identifier == "showPackDetailsSegue" {
+            if let indexPath = packsTable.indexPathForSelectedRow {
+                let controller = segue.destination as! DetailViewController
+                controller.packItem = packs[indexPath.row]
+                //controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                //controller.navigationItem.leftItemsSupplementBackButton = true
+                //detailViewController = controller
             }
-        }*/
+        }
     }
+
+    // MARK: - Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return packs.count
@@ -90,16 +91,14 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
         cell.packSizeLabel.text = packObject.size
         return cell
     }
-
-    // MARK: - Table View
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
-        return cell
-    }*/
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*let selectedPack = packs[indexPath.row]
+        let alertController = UIAlertController(title: "Hint", message: "You have selected pack : \(selectedPack.name).", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)*/
+    }
 
 
 }

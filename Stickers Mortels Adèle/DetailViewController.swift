@@ -8,27 +8,41 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var packStickersCollection: UICollectionView!
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return packItem?.stickersNames.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = packStickersCollection.dequeueReusableCell(withReuseIdentifier: "StickerImageCell", for: indexPath) as! StickerImageViewCell
+        cell.stickerImage.image = UIImage(named: (packItem?.stickersNames[indexPath.row])!)
+        let padding: CGFloat =  10
+        let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
+        cell.stickerImage.frame = CGRect(x: 0, y: 0, width: collectionViewSize, height: collectionViewSize)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat =  10
+        let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
+        return CGSize(width: collectionViewSize, height: collectionViewSize)
+    }
 
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        self.title = packItem?.name
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        packStickersCollection.delegate = self
+        packStickersCollection.dataSource = self
         configureView()
     }
 
-    var detailItem: NSDate? {
+    var packItem: Pack? {
         didSet {
             // Update the view.
             configureView()
