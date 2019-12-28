@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6742176523B6BC99000152EC /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742176423B6BC99000152EC /* Pack.swift */; };
+		6742176723B6BE2D000152EC /* packs.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176623B6BE2C000152EC /* packs.json */; };
+		6742176923B6BE52000152EC /* objets.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176823B6BE52000152EC /* objets.json */; };
+		6742176B23B6BE73000152EC /* punchlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176A23B6BE73000152EC /* punchlines.json */; };
+		6742176D23B6BE8E000152EC /* personnages1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176C23B6BE8E000152EC /* personnages1.json */; };
+		6742176F23B6BEA8000152EC /* personnages2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742176E23B6BEA8000152EC /* personnages2.json */; };
+		6742177123B6BEC6000152EC /* couvertures.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742177023B6BEC6000152EC /* couvertures.json */; };
+		6742177323B734FD000152EC /* PackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742177223B734FD000152EC /* PackTableViewCell.swift */; };
 		675A5D3223AA9F4A00CA71CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */; };
 		675A5D3423AA9F4A00CA71CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */; };
-		675A5D3623AA9F4A00CA71CC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3523AA9F4A00CA71CC /* MasterViewController.swift */; };
 		675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */; };
 		675A5D3B23AA9F4A00CA71CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3923AA9F4A00CA71CC /* Main.storyboard */; };
 		675A5D3D23AA9F4B00CA71CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */; };
 		675A5D4023AA9F4B00CA71CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3E23AA9F4B00CA71CC /* LaunchScreen.storyboard */; };
+		67D97F5423B4D6A000215531 /* PacksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D97F5323B4D6A000215531 /* PacksListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6742176423B6BC99000152EC /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		6742176623B6BE2C000152EC /* packs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = packs.json; sourceTree = "<group>"; };
+		6742176823B6BE52000152EC /* objets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = objets.json; sourceTree = "<group>"; };
+		6742176A23B6BE73000152EC /* punchlines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = punchlines.json; sourceTree = "<group>"; };
+		6742176C23B6BE8E000152EC /* personnages1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personnages1.json; sourceTree = "<group>"; };
+		6742176E23B6BEA8000152EC /* personnages2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = personnages2.json; sourceTree = "<group>"; };
+		6742177023B6BEC6000152EC /* couvertures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = couvertures.json; sourceTree = "<group>"; };
+		6742177223B734FD000152EC /* PackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackTableViewCell.swift; sourceTree = "<group>"; };
 		675A5D2E23AA9F4A00CA71CC /* Stickers Mortels Adèle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stickers Mortels Adèle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		675A5D3523AA9F4A00CA71CC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		675A5D3A23AA9F4A00CA71CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675A5D3F23AA9F4B00CA71CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675A5D4123AA9F4B00CA71CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D97F5323B4D6A000215531 /* PacksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6742176223B6BC5A000152EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6742176623B6BE2C000152EC /* packs.json */,
+				6742176823B6BE52000152EC /* objets.json */,
+				6742176A23B6BE73000152EC /* punchlines.json */,
+				6742176C23B6BE8E000152EC /* personnages1.json */,
+				6742176E23B6BEA8000152EC /* personnages2.json */,
+				6742177023B6BEC6000152EC /* couvertures.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6742176323B6BC67000152EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6742176423B6BC99000152EC /* Pack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		675A5D2523AA9F4A00CA71CC = {
 			isa = PBXGroup;
 			children = (
+				6742176323B6BC67000152EC /* Models */,
+				6742176223B6BC5A000152EC /* Resources */,
 				675A5D3023AA9F4A00CA71CC /* Stickers Mortels Adèle */,
 				675A5D2F23AA9F4A00CA71CC /* Products */,
 			);
@@ -60,7 +99,8 @@
 			children = (
 				675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */,
 				675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */,
-				675A5D3523AA9F4A00CA71CC /* MasterViewController.swift */,
+				67D97F5323B4D6A000215531 /* PacksListViewController.swift */,
+				6742177223B734FD000152EC /* PackTableViewCell.swift */,
 				675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */,
 				675A5D3923AA9F4A00CA71CC /* Main.storyboard */,
 				675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */,
@@ -128,8 +168,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6742177123B6BEC6000152EC /* couvertures.json in Resources */,
+				6742176F23B6BEA8000152EC /* personnages2.json in Resources */,
+				6742176723B6BE2D000152EC /* packs.json in Resources */,
 				675A5D4023AA9F4B00CA71CC /* LaunchScreen.storyboard in Resources */,
+				6742176B23B6BE73000152EC /* punchlines.json in Resources */,
 				675A5D3D23AA9F4B00CA71CC /* Assets.xcassets in Resources */,
+				6742176D23B6BE8E000152EC /* personnages1.json in Resources */,
+				6742176923B6BE52000152EC /* objets.json in Resources */,
 				675A5D3B23AA9F4A00CA71CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +189,10 @@
 			files = (
 				675A5D3223AA9F4A00CA71CC /* AppDelegate.swift in Sources */,
 				675A5D3423AA9F4A00CA71CC /* SceneDelegate.swift in Sources */,
-				675A5D3623AA9F4A00CA71CC /* MasterViewController.swift in Sources */,
+				67D97F5423B4D6A000215531 /* PacksListViewController.swift in Sources */,
 				675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */,
+				6742177323B734FD000152EC /* PackTableViewCell.swift in Sources */,
+				6742176523B6BC99000152EC /* Pack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
