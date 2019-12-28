@@ -29,7 +29,8 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func computePackTable() -> Void {
-        self.view.addConstraint(NSLayoutConstraint(item: self.bannerImage!, attribute: .width, relatedBy: .equal, toItem: mainView, attribute: .width, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: packsTable!, attribute: .width, relatedBy: .equal, toItem: mainView, attribute: .width, multiplier: 1, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint(item: packsTable!, attribute: .top, relatedBy: .equal, toItem: bannerImage, attribute: .bottom, multiplier: 1, constant: 50))
     }
     
     func computeBannerImage() -> Void {
