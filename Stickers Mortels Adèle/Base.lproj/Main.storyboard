@@ -31,10 +31,9 @@
                 <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="Stickers_Mortels_Ade_le" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eN4-dX-tie">
-                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bJ6-PI-SsH">
                                     <size key="itemSize" width="211" height="218"/>
@@ -63,13 +62,21 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="toucher un sticker pour le partager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-DU-jNd">
+                                <rect key="frame" x="88" y="824" width="238" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="nIe-DU-jNd" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="-20" id="Khz-b5-NNl"/>
                             <constraint firstItem="eN4-dX-tie" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="Ncv-g4-sjM"/>
                             <constraint firstItem="eN4-dX-tie" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" id="Vcp-jF-dZK"/>
                             <constraint firstItem="eN4-dX-tie" firstAttribute="trailing" secondItem="VUw-jc-0yf" secondAttribute="trailing" id="acz-kA-Alz"/>
-                            <constraint firstItem="eN4-dX-tie" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="-50" id="oZT-EQ-hu4"/>
+                            <constraint firstItem="eN4-dX-tie" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="-60" id="oZT-EQ-hu4"/>
+                            <constraint firstItem="nIe-DU-jNd" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="usJ-na-J9m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
