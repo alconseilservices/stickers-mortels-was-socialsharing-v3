@@ -71,11 +71,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nIe-DU-jNd" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="-20" id="Khz-b5-NNl"/>
-                            <constraint firstItem="eN4-dX-tie" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="Ncv-g4-sjM"/>
-                            <constraint firstItem="eN4-dX-tie" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" id="Vcp-jF-dZK"/>
-                            <constraint firstItem="eN4-dX-tie" firstAttribute="trailing" secondItem="VUw-jc-0yf" secondAttribute="trailing" id="acz-kA-Alz"/>
-                            <constraint firstItem="eN4-dX-tie" firstAttribute="bottom" secondItem="VUw-jc-0yf" secondAttribute="bottom" constant="-60" id="oZT-EQ-hu4"/>
+                            <constraint firstItem="nIe-DU-jNd" firstAttribute="bottom" secondItem="svH-Pt-448" secondAttribute="bottom" constant="-54" id="Khz-b5-NNl"/>
+                            <constraint firstItem="eN4-dX-tie" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="Ncv-g4-sjM"/>
+                            <constraint firstItem="eN4-dX-tie" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="top" constant="88" id="Vcp-jF-dZK"/>
+                            <constraint firstItem="eN4-dX-tie" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailing" id="acz-kA-Alz"/>
+                            <constraint firstItem="eN4-dX-tie" firstAttribute="bottom" secondItem="svH-Pt-448" secondAttribute="bottom" constant="-94" id="oZT-EQ-hu4"/>
                             <constraint firstItem="nIe-DU-jNd" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="usJ-na-J9m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>

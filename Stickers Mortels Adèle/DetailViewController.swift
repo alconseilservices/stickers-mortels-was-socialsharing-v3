@@ -27,7 +27,13 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat =  10
-        let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
+        let collectionViewSize: CGFloat
+        if #available(iOS 10.0, *) {
+            collectionViewSize = ((UIScreen.main.bounds.size.width - padding)/5)
+        } else {
+            collectionViewSize = ((collectionView.frame.size.width - padding)/5)
+            
+        }
         return CGSize(width: collectionViewSize, height: collectionViewSize)
     }
     
@@ -50,6 +56,9 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 
         actionSheet.addImageView(withImage: UIImage(named: sticker)!)
+        actionSheet.popoverPresentationController?.sourceView = self.view
+        actionSheet.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         present(actionSheet, animated: true, completion: nil)
     }
     
@@ -88,6 +97,9 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
             }
         }))
         actionSheet.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))
+        actionSheet.popoverPresentationController?.sourceView = self.view
+        actionSheet.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         self.present(actionSheet, animated: true, completion: nil)
     }
     
