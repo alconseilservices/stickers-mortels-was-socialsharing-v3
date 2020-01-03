@@ -19,7 +19,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = packStickersCollection.dequeueReusableCell(withReuseIdentifier: "StickerImageCell", for: indexPath) as! StickerImageViewCell
         cell.stickerImage.image = UIImage(named: (packItem?.stickersNames[indexPath.row])!)
-        let padding: CGFloat =  10
+        let padding: CGFloat =  40
         let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
         cell.stickerImage.frame = CGRect(x: 0, y: 0, width: collectionViewSize, height: collectionViewSize)
         return cell
