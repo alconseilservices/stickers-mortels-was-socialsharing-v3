@@ -11,6 +11,8 @@ import UIKit
 class DetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var packStickersCollection: UICollectionView!
+    private let spacing:CGFloat = 16.0
+    private let origin: CGPoint = CGPoint(x: 0, y: 0)
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return packItem?.stickersNames.count ?? 0
@@ -19,22 +21,21 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = packStickersCollection.dequeueReusableCell(withReuseIdentifier: "StickerImageCell", for: indexPath) as! StickerImageViewCell
         cell.stickerImage.image = UIImage(named: (packItem?.stickersNames[indexPath.row])!)
-        let padding: CGFloat =  40
-        let collectionViewSize = ((collectionView.frame.size.width - padding)/5)
-        cell.stickerImage.frame = CGRect(x: 0, y: 0, width: collectionViewSize, height: collectionViewSize)
+        cell.stickerImage.frame = CGRect(origin: origin, size: computeCellSize())
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let padding: CGFloat =  10
-        let collectionViewSize: CGFloat
-        if #available(iOS 10.0, *) {
-            collectionViewSize = ((UIScreen.main.bounds.size.width - padding)/5)
-        } else {
-            collectionViewSize = ((collectionView.frame.size.width - padding)/5)
-            
-        }
-        return CGSize(width: collectionViewSize, height: collectionViewSize)
+        return computeCellSize()
+    }
+    
+    func computeCellSize() -> CGSize {
+        let numberOfItemsPerRow:CGFloat = 4
+        let spacingBetweenCells:CGFloat = 16
+           
+        let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells)
+        let width = (packStickersCollection.bounds.width - totalSpacing)/numberOfItemsPerRow
+        return CGSize(width: width, height: width)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -77,6 +78,12 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        packStickersCollection.collectionViewLayout = layout
+        self.automaticallyAdjustsScrollViewInsets = false
         packStickersCollection.delegate = self
         packStickersCollection.dataSource = self
         configureView()
