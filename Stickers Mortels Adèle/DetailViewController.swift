@@ -83,7 +83,9 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         packStickersCollection.collectionViewLayout = layout
-        self.automaticallyAdjustsScrollViewInsets = false
+        if #available(iOS 10.0, *) {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
         packStickersCollection.delegate = self
         packStickersCollection.dataSource = self
         configureView()
