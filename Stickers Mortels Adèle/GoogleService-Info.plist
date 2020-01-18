@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>724745401854-l6h7r0ibq6k5d7iqvvv353kg5mc8apqe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.724745401854-l6h7r0ibq6k5d7iqvvv353kg5mc8apqe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA0SD2fTzC7IrvgdpHiyZyfPjvUTZUjWM4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>724745401854</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.groupebayard.mortelleadele.wasstickers</string>
+	<key>PROJECT_ID</key>
+	<string>mortelle-adele-stickers</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mortelle-adele-stickers.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:724745401854:ios:9fe0bd2760554d5954bcaf</string>
+	<key>DATABASE_URL</key>
+	<string>https://mortelle-adele-stickers.firebaseio.com</string>
+</dict>
+</plist>
