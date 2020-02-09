@@ -13,11 +13,11 @@ import Batch
 class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        BatchPush.handle(userNotificationCenter: center, didReceive: response)
+        // BatchPush.handle(userNotificationCenter: center, didReceive: response)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        BatchPush.handle(userNotificationCenter: center, willPresent: notification, willShowSystemForegroundAlert: true)
+        // BatchPush.handle(userNotificationCenter: center, willPresent: notification, willShowSystemForegroundAlert: true)
         completionHandler([.alert, .sound, .badge])
     }
 }

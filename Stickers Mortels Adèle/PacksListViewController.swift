@@ -25,7 +25,7 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
         packsTable.dataSource = self
         computeBannerImage()
         computePackTable()
-        Analytics.setScreenName("PackList", screenClass: "")
+        Analytics.setScreenName("PackList", screenClass: "PacksListViewController")
     }
 
     override func viewWillAppear(_ animated: Bool) {

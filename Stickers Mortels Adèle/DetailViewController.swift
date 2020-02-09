@@ -99,7 +99,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         packStickersCollection.delegate = self
         packStickersCollection.dataSource = self
         configureView()
-        Analytics.setScreenName("PackDetail", screenClass: "")
+        Analytics.setScreenName("PackDetail", screenClass: "DetailViewController")
     }
 
     var packItem: Pack? {

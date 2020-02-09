@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		675A5D3D23AA9F4B00CA71CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */; };
 		675A5D4023AA9F4B00CA71CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3E23AA9F4B00CA71CC /* LaunchScreen.storyboard */; };
 		678870CA23D3C19E00AA690F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 678870C923D3C19E00AA690F /* GoogleService-Info.plist */; };
+		67A77CDF23F053C90032B9F8 /* container in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CDE23F053C90032B9F8 /* container */; };
 		67D97F5423B4D6A000215531 /* PacksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D97F5323B4D6A000215531 /* PacksListViewController.swift */; };
 		67F1909823D9BCF7004394AE /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1909723D9BCF7004394AE /* NotificationDelegate.swift */; };
 		EE945A7DF26FD879708B66A7 /* libPods-Stickers Mortels Adèle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8528D853568057808D0885D0 /* libPods-Stickers Mortels Adèle.a */; };
@@ -50,6 +51,7 @@
 		675A5D3F23AA9F4B00CA71CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675A5D4123AA9F4B00CA71CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678870C923D3C19E00AA690F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67A77CDE23F053C90032B9F8 /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; path = container; sourceTree = "<group>"; };
 		67D97F5323B4D6A000215531 /* PacksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksListViewController.swift; sourceTree = "<group>"; };
 		67F1909323D6EBE6004394AE /* Stickers Mortelle Adèle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stickers Mortelle Adèle.entitlements"; sourceTree = "<group>"; };
 		67F1909723D9BCF7004394AE /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		675A5D2523AA9F4A00CA71CC = {
 			isa = PBXGroup;
 			children = (
+				67A77CDE23F053C90032B9F8 /* container */,
 				6742176323B6BC67000152EC /* Models */,
 				6742176223B6BC5A000152EC /* Resources */,
 				675A5D3023AA9F4A00CA71CC /* Stickers Mortels Adèle */,
@@ -185,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */;
+			buildConfigurationList = 675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,6 +221,7 @@
 				678870CA23D3C19E00AA690F /* GoogleService-Info.plist in Resources */,
 				6742176923B6BE52000152EC /* objets.json in Resources */,
 				675A5D3B23AA9F4A00CA71CC /* Main.storyboard in Resources */,
+				67A77CDF23F053C90032B9F8 /* container in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */ = {
+		675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				675A5D4223AA9F4B00CA71CC /* Debug */,
