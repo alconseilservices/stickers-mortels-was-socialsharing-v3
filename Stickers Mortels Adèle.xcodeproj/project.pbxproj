@@ -18,7 +18,6 @@
 		6742177123B6BEC6000152EC /* couvertures.json in Resources */ = {isa = PBXBuildFile; fileRef = 6742177023B6BEC6000152EC /* couvertures.json */; };
 		6742177323B734FD000152EC /* PackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742177223B734FD000152EC /* PackTableViewCell.swift */; };
 		675A5D3223AA9F4A00CA71CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */; };
-		675A5D3423AA9F4A00CA71CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */; };
 		675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */; };
 		675A5D3B23AA9F4A00CA71CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3923AA9F4A00CA71CC /* Main.storyboard */; };
 		675A5D3D23AA9F4B00CA71CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */; };
@@ -44,7 +43,6 @@
 		6742177223B734FD000152EC /* PackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackTableViewCell.swift; sourceTree = "<group>"; };
 		675A5D2E23AA9F4A00CA71CC /* Stickers Mortelle Adèle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stickers Mortelle Adèle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		675A5D3A23AA9F4A00CA71CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		675A5D3C23AA9F4B00CA71CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			children = (
 				67F1909323D6EBE6004394AE /* Stickers Mortelle Adèle.entitlements */,
 				675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */,
-				675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */,
 				67D97F5323B4D6A000215531 /* PacksListViewController.swift */,
 				6742177223B734FD000152EC /* PackTableViewCell.swift */,
 				675A5D3723AA9F4A00CA71CC /* DetailViewController.swift */,
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				675A5D3223AA9F4A00CA71CC /* AppDelegate.swift in Sources */,
-				675A5D3423AA9F4A00CA71CC /* SceneDelegate.swift in Sources */,
 				67344F1C23B7E0B500F394EB /* StickerImageViewCell.swift in Sources */,
 				67D97F5423B4D6A000215531 /* PacksListViewController.swift in Sources */,
 				675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */,
