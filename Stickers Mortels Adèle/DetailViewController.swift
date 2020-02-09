@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class DetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
@@ -68,6 +69,15 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         shareViewController.popoverPresentationController?.sourceView = self.view
         shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
         shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        shareViewController.completionWithItemsHandler = {(activityType: UIActivity.ActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?) in
+            if !completed {
+                return
+            }
+            Analytics.logEvent("partage", parameters: [
+                "title":"pack : #" + self.packItem!.name + "# - #" + sticker + "#",
+                "action":"clic : partage sticker"
+            ])
+        }
         present(shareViewController, animated: true, completion: nil)
     }
 
@@ -89,6 +99,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         packStickersCollection.delegate = self
         packStickersCollection.dataSource = self
         configureView()
+        Analytics.setScreenName("PackDetail", screenClass: "")
     }
 
     var packItem: Pack? {
@@ -103,6 +114,10 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
         actionSheet.addAction(UIAlertAction(title: "Ajouter le pack à WhatsApp", style: .default, handler: { action in
             if(canSendToWhatsapp()) {
                 sendToWhatsapp(fileName: self.packItem!.dataFileName)
+                Analytics.logEvent("download_WA", parameters: [
+                    "title":"pack : #" + self.packItem!.name + "#",
+                    "action":"download complete"
+                ])
             }
         }))
         actionSheet.addAction(UIAlertAction(title: "Annuler", style: .cancel, handler: nil))

@@ -7,4 +7,5 @@ target 'Stickers Mortels Adèle' do
 
   # Pods for Stickers Mortels Adèle
   pod 'GoogleTagManager', '~> 6.0'
+  pod 'Batch', '~> 1.14'
 end

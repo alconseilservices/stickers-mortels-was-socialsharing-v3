@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67041B7A23D3C4010011BBDC /* GTM-TND9NJT.json in Resources */ = {isa = PBXBuildFile; fileRef = 67041B7923D3C4010011BBDC /* GTM-TND9NJT.json */; };
-		67041B7C23D3C4200011BBDC /* container in Resources */ = {isa = PBXBuildFile; fileRef = 67041B7B23D3C4200011BBDC /* container */; };
 		67344F1C23B7E0B500F394EB /* StickerImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67344F1B23B7E0B500F394EB /* StickerImageViewCell.swift */; };
 		67344F1E23B809B700F394EB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67344F1D23B809B700F394EB /* Utils.swift */; };
 		6742176523B6BC99000152EC /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742176423B6BC99000152EC /* Pack.swift */; };
@@ -27,14 +25,12 @@
 		675A5D4023AA9F4B00CA71CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675A5D3E23AA9F4B00CA71CC /* LaunchScreen.storyboard */; };
 		678870CA23D3C19E00AA690F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 678870C923D3C19E00AA690F /* GoogleService-Info.plist */; };
 		67D97F5423B4D6A000215531 /* PacksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D97F5323B4D6A000215531 /* PacksListViewController.swift */; };
-		E1EFDE9A089AB1CBF0EAE670 /* libPods-Stickers Mortels Adèle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623738BF07CE47C3D7A0C76 /* libPods-Stickers Mortels Adèle.a */; };
+		67F1909823D9BCF7004394AE /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F1909723D9BCF7004394AE /* NotificationDelegate.swift */; };
+		EE945A7DF26FD879708B66A7 /* libPods-Stickers Mortels Adèle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8528D853568057808D0885D0 /* libPods-Stickers Mortels Adèle.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		110048B76E6603C14F5BB9D2 /* Pods-Stickers Mortels Adèle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers Mortels Adèle.debug.xcconfig"; path = "Target Support Files/Pods-Stickers Mortels Adèle/Pods-Stickers Mortels Adèle.debug.xcconfig"; sourceTree = "<group>"; };
-		1623738BF07CE47C3D7A0C76 /* libPods-Stickers Mortels Adèle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stickers Mortels Adèle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67041B7923D3C4010011BBDC /* GTM-TND9NJT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "GTM-TND9NJT.json"; sourceTree = "<group>"; };
-		67041B7B23D3C4200011BBDC /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; name = container; sourceTree = "<group>"; };
+		1D86AA902CA92AC6FD8C9B0E /* Pods-Stickers Mortels Adèle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers Mortels Adèle.release.xcconfig"; path = "Target Support Files/Pods-Stickers Mortels Adèle/Pods-Stickers Mortels Adèle.release.xcconfig"; sourceTree = "<group>"; };
 		67344F1B23B7E0B500F394EB /* StickerImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerImageViewCell.swift; sourceTree = "<group>"; };
 		67344F1D23B809B700F394EB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		6742176423B6BC99000152EC /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
@@ -55,7 +51,10 @@
 		675A5D4123AA9F4B00CA71CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678870C923D3C19E00AA690F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67D97F5323B4D6A000215531 /* PacksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksListViewController.swift; sourceTree = "<group>"; };
-		6A5380E19A69983C3A8CDED2 /* Pods-Stickers Mortels Adèle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers Mortels Adèle.release.xcconfig"; path = "Target Support Files/Pods-Stickers Mortels Adèle/Pods-Stickers Mortels Adèle.release.xcconfig"; sourceTree = "<group>"; };
+		67F1909323D6EBE6004394AE /* Stickers Mortelle Adèle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stickers Mortelle Adèle.entitlements"; sourceTree = "<group>"; };
+		67F1909723D9BCF7004394AE /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		71793AB71BFB5A7BF5C06B64 /* Pods-Stickers Mortels Adèle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers Mortels Adèle.debug.xcconfig"; path = "Target Support Files/Pods-Stickers Mortels Adèle/Pods-Stickers Mortels Adèle.debug.xcconfig"; sourceTree = "<group>"; };
+		8528D853568057808D0885D0 /* libPods-Stickers Mortels Adèle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stickers Mortels Adèle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1EFDE9A089AB1CBF0EAE670 /* libPods-Stickers Mortels Adèle.a in Frameworks */,
+				EE945A7DF26FD879708B66A7 /* libPods-Stickers Mortels Adèle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,19 +72,10 @@
 		51F231DCAC869B27FBD48F46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				110048B76E6603C14F5BB9D2 /* Pods-Stickers Mortels Adèle.debug.xcconfig */,
-				6A5380E19A69983C3A8CDED2 /* Pods-Stickers Mortels Adèle.release.xcconfig */,
+				71793AB71BFB5A7BF5C06B64 /* Pods-Stickers Mortels Adèle.debug.xcconfig */,
+				1D86AA902CA92AC6FD8C9B0E /* Pods-Stickers Mortels Adèle.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		67041B7823D3C3E90011BBDC /* container */ = {
-			isa = PBXGroup;
-			children = (
-				67041B7B23D3C4200011BBDC /* container */,
-				67041B7923D3C4010011BBDC /* GTM-TND9NJT.json */,
-			);
-			path = container;
 			sourceTree = "<group>";
 		};
 		6742176223B6BC5A000152EC /* Resources */ = {
@@ -112,13 +102,12 @@
 		675A5D2523AA9F4A00CA71CC = {
 			isa = PBXGroup;
 			children = (
-				67041B7823D3C3E90011BBDC /* container */,
 				6742176323B6BC67000152EC /* Models */,
 				6742176223B6BC5A000152EC /* Resources */,
 				675A5D3023AA9F4A00CA71CC /* Stickers Mortels Adèle */,
 				675A5D2F23AA9F4A00CA71CC /* Products */,
 				51F231DCAC869B27FBD48F46 /* Pods */,
-				8640781F7D8331257328A900 /* Frameworks */,
+				CFE2B79841E535D9A5FD6BC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +122,7 @@
 		675A5D3023AA9F4A00CA71CC /* Stickers Mortels Adèle */ = {
 			isa = PBXGroup;
 			children = (
+				67F1909323D6EBE6004394AE /* Stickers Mortelle Adèle.entitlements */,
 				675A5D3123AA9F4A00CA71CC /* AppDelegate.swift */,
 				675A5D3323AA9F4A00CA71CC /* SceneDelegate.swift */,
 				67D97F5323B4D6A000215531 /* PacksListViewController.swift */,
@@ -145,14 +135,15 @@
 				675A5D3E23AA9F4B00CA71CC /* LaunchScreen.storyboard */,
 				675A5D4123AA9F4B00CA71CC /* Info.plist */,
 				678870C923D3C19E00AA690F /* GoogleService-Info.plist */,
+				67F1909723D9BCF7004394AE /* NotificationDelegate.swift */,
 			);
 			path = "Stickers Mortels Adèle";
 			sourceTree = "<group>";
 		};
-		8640781F7D8331257328A900 /* Frameworks */ = {
+		CFE2B79841E535D9A5FD6BC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1623738BF07CE47C3D7A0C76 /* libPods-Stickers Mortels Adèle.a */,
+				8528D853568057808D0885D0 /* libPods-Stickers Mortels Adèle.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,11 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 675A5D4423AA9F4B00CA71CC /* Build configuration list for PBXNativeTarget "Stickers Mortels Adèle" */;
 			buildPhases = (
-				37AC351DA040E9B235BF0F3B /* [CP] Check Pods Manifest.lock */,
+				BC63D02E5D1A64A06A0215A1 /* [CP] Check Pods Manifest.lock */,
 				675A5D2A23AA9F4A00CA71CC /* Sources */,
 				675A5D2B23AA9F4A00CA71CC /* Frameworks */,
 				675A5D2C23AA9F4A00CA71CC /* Resources */,
-				BA8C13BAB274BF70277A027C /* [CP] Copy Pods Resources */,
+				E99493E137AA953B87A12F3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */;
+			buildConfigurationList = 675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,14 +208,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67041B7C23D3C4200011BBDC /* container in Resources */,
 				6742177123B6BEC6000152EC /* couvertures.json in Resources */,
 				6742176F23B6BEA8000152EC /* personnages2.json in Resources */,
 				6742176723B6BE2D000152EC /* packs.json in Resources */,
 				675A5D4023AA9F4B00CA71CC /* LaunchScreen.storyboard in Resources */,
 				6742176B23B6BE73000152EC /* punchlines.json in Resources */,
 				675A5D3D23AA9F4B00CA71CC /* Assets.xcassets in Resources */,
-				67041B7A23D3C4010011BBDC /* GTM-TND9NJT.json in Resources */,
 				6742176D23B6BE8E000152EC /* personnages1.json in Resources */,
 				678870CA23D3C19E00AA690F /* GoogleService-Info.plist in Resources */,
 				6742176923B6BE52000152EC /* objets.json in Resources */,
@@ -235,7 +224,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37AC351DA040E9B235BF0F3B /* [CP] Check Pods Manifest.lock */ = {
+		BC63D02E5D1A64A06A0215A1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +246,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA8C13BAB274BF70277A027C /* [CP] Copy Pods Resources */ = {
+		E99493E137AA953B87A12F3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +277,7 @@
 				675A5D3823AA9F4A00CA71CC /* DetailViewController.swift in Sources */,
 				6742177323B734FD000152EC /* PackTableViewCell.swift in Sources */,
 				6742176523B6BC99000152EC /* Pack.swift in Sources */,
+				67F1909823D9BCF7004394AE /* NotificationDelegate.swift in Sources */,
 				67344F1E23B809B700F394EB /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,9 +420,10 @@
 		};
 		675A5D4523AA9F4B00CA71CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 110048B76E6603C14F5BB9D2 /* Pods-Stickers Mortels Adèle.debug.xcconfig */;
+			baseConfigurationReference = 71793AB71BFB5A7BF5C06B64 /* Pods-Stickers Mortels Adèle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stickers Mortels Adèle/Stickers Mortelle Adèle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VE4JH2R5J4;
@@ -452,9 +443,10 @@
 		};
 		675A5D4623AA9F4B00CA71CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A5380E19A69983C3A8CDED2 /* Pods-Stickers Mortels Adèle.release.xcconfig */;
+			baseConfigurationReference = 1D86AA902CA92AC6FD8C9B0E /* Pods-Stickers Mortels Adèle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stickers Mortels Adèle/Stickers Mortelle Adèle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VE4JH2R5J4;
@@ -475,7 +467,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */ = {
+		675A5D2923AA9F4A00CA71CC /* Build configuration list for PBXProject "Stickers Mortels Adèle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				675A5D4223AA9F4B00CA71CC /* Debug */,

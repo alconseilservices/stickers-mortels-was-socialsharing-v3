@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import FirebaseAnalytics
 
 class PacksListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -24,6 +25,7 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
         packsTable.dataSource = self
         computeBannerImage()
         computePackTable()
+        Analytics.setScreenName("PackList", screenClass: "")
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,9 +36,17 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
         let actionSheet: UIAlertController = UIAlertController(title: "", message: "Choisir une action", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "CGU", style: .default, handler: { action in
             let svc = SFSafariViewController(url: NSURL(string: "http://applications-enfants.bayam.fr/page/cgu-stickers-mortelle-adele-application.html")! as URL)
+            Analytics.logEvent("navigation", parameters: [
+                "title":"CGU",
+                "action":"clic : onglet"
+            ])
             self.present(svc, animated: true, completion: nil)
         }))
         actionSheet.addAction(UIAlertAction(title: "L' univers Mortelle Adèle", style: .default, handler: { action in
+            Analytics.logEvent("navigation", parameters: [
+                "title":"Site web",
+                "action":"clic : onglet"
+            ])
             if let url = URL(string: "https://www.mortelleadele.com") {
                 UIApplication.shared.open(url)
             }
@@ -73,6 +83,10 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
             if let indexPath = packsTable.indexPathForSelectedRow {
                 let controller = segue.destination as! DetailViewController
                 controller.packItem = packs[indexPath.row]
+                Analytics.logEvent("navigation", parameters: [
+                    "title":"pack : #" + packs[indexPath.row].name + "#",
+                    "action":"clic : acces pack"
+                ])
             }
         }
     }

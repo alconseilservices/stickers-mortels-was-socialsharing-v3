@@ -1,4 +1,5 @@
 PODS:
+  - Batch (1.14.2)
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -26,10 +27,12 @@ PODS:
   - nanopb/encode (0.3.9011)
 
 DEPENDENCIES:
+  - Batch (~> 1.14)
   - GoogleTagManager (~> 6.0)
 
 SPEC REPOS:
   trunk:
+    - Batch
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
@@ -41,6 +44,7 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  Batch: d75249a43575fbd061c0baa80306fb20a6126a0a
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
@@ -51,6 +55,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 464bda20c9e8a8ac5a41a8940560b765a204283a
+PODFILE CHECKSUM: 86543ffbd73b6eb1bc7b9d2726526c773e13ad18
 
 COCOAPODS: 1.8.4
