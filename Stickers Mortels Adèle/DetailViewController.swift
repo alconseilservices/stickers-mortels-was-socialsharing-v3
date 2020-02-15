@@ -74,7 +74,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
                 return
             }
             Analytics.logEvent("partage", parameters: [
-                "title":"pack : #" + self.packItem!.name + "# - #" + sticker + "#",
+                "title":"pack : " + self.packItem!.name + " - " + sticker,
                 "action":"clic : partage sticker"
             ])
         }
@@ -115,7 +115,7 @@ class DetailViewController: UIViewController, UICollectionViewDataSource, UIColl
             if(canSendToWhatsapp()) {
                 sendToWhatsapp(fileName: self.packItem!.dataFileName)
                 Analytics.logEvent("download_WA", parameters: [
-                    "title":"pack : #" + self.packItem!.name + "#",
+                    "title":"pack : " + self.packItem!.name,
                     "action":"download complete"
                 ])
             }

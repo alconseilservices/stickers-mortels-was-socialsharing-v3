@@ -84,7 +84,7 @@ class PacksListViewController: UIViewController, UITableViewDataSource, UITableV
                 let controller = segue.destination as! DetailViewController
                 controller.packItem = packs[indexPath.row]
                 Analytics.logEvent("navigation", parameters: [
-                    "title":"pack : #" + packs[indexPath.row].name + "#",
+                    "title":"pack : " + packs[indexPath.row].name,
                     "action":"clic : acces pack"
                 ])
             }
