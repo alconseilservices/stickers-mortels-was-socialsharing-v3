@@ -426,7 +426,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Stickers Mortels Adèle/Stickers Mortelle Adèle.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = VE4JH2R5J4;
 				INFOPLIST_FILE = "Stickers Mortels Adèle/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -451,7 +451,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Stickers Mortels Adèle/Stickers Mortelle Adèle.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = VE4JH2R5J4;
 				INFOPLIST_FILE = "Stickers Mortels Adèle/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
